@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIMELIGHT</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Boxicon CDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- My CSS File -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <div class="container-xxl">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/images/limelight-brandlogo.png"
+              alt="logo"
+              class="img-fluid"
+            />
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <i class="bx bxs-door-open fs-1"></i>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bg-black"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <!-- navItems -->
+            <button
+              class="navbar-toggler border-0 d-lg-none d-flex justify-content-end p-3"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <i class="bx bx-door-open text-white fs-2"></i>
+            </button>
+
+            <ul class="navbar-nav ms-lg-auto p-4 p-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">ABOUT</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">SERVICES</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">BLOG</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">GALLERY</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+        <!-- Banner -->
+        <section class="banner">
+            <div class="container-xxl d-flex justify-content-center align-items-center">
+
+                <!-- Banner Text -->
+                <div class="text-center text-md-start bannerText">
+                    <h1>Design Of Future</h1>
+                    <p class="text-white">There are many variations of passages of Lorem Ipsum available</p>
+                    <a href="#" class="m-auto m-md-0 customBtn">read more</a>
+                </div>
+
+                <!-- Sliding Buttons -->
+                <div class="slidingButtons">
+                    <a href="#" class="prev"><i class='bx bx-chevron-left text-white'></i></a>
+                    <a href="#" class="next"><i class='bx bx-chevron-right text-white'></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about">
+            <div class="container-xxl">
+                <div class="row gy-4 px-5">
+                    <!-- Left Part -->
+                    <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center appear">
+                        <div class="aboutText">
+                            <h2 class="text-center text-lg-start">about <span class="text-center text-lg-start">us</span></h2>
+                            <p class="text-secondary text-center text-lg-start">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humourThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou</p>
+                            <a href="#" class="primaryBtn m-auto m-lg-0">read more</a>
+                        </div>
+                    </div>
+                    <!-- Right Part -->
+                    <div class="col-12 col-lg-6 ps-lg-5 appear">
+                        <figure class="text-center"><img src="./images/limelight-about.png" alt="about-image" class="img-fluid"></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service -->
+        <section class="service">
+            <div class="container-xxl">
+                <!-- Service Heading -->
+                <div class="text-center serviceHeading appear">
+                    <h2>our <span>services</span></h2>
+                </div>
+                <!-- Servises -->
+                <div class="row gy-5 align-items-center">
+                    <div class="col-12 col-md-6 col-lg-3 appear">
+                        <div class="items text-center">
+                            <figure><img src="./images/limelight-armchair.png" alt="services"></figure>
+                            <!-- Item Head -->
+                            <div class="itemBody">
+                                <h3 class="fs-4 fw-bold">Retina Ready</h3>
+                                <p>many variations of passages of Lorem Ipsum available, but the </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 appear">
+                        <div class="items text-center">
+                            <figure><img src="./images/limelight-stairs.png" alt="services"></figure>
+                            <!-- Item Head -->
+                            <div class="itemBody">
+                                <h3 class="fs-4 fw-bold">Easy-To-Use</h3>
+                                <p>many variations of passages of Lorem Ipsum available, but the </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 appear">
+                        <div class="items text-center">
+                            <figure><img src="./images/limelight-interior-design-1.png" alt="services"></figure>
+                            <!-- Item Head -->
+                            <div class="itemBody">
+                                <h3 class="fs-4 fw-bold">Creative Elements</h3>
+                                <p>many variations of passages of Lorem Ipsum available, but the </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 appear">
+                        <div class="items text-center">
+                            <figure><img src="./images/limelight-interior-design-2.png" alt="services"></figure>
+                            <!-- Item Head -->
+                            <div class="itemBody">
+                                <h3 class="fs-4 fw-bold">Easy Import</h3>
+                                <p>many variations of passages of Lorem Ipsum available, but the </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="primaryBtn m-auto appear">read more</a>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery bg-black py-5 position-relative appear">
+            <!-- Gallery head -->
+            <div class="text-center mb-5">
+                <h2 class="text-white mb-4">our <span>gallery</span></h2>
+                <p class="text-white">here are many variations of passages of Lorem Ipsum available, but the majority have suffer</p>
+            </div>
+
+            <!-- Slider -->
+            <div class="d-flex align-items-center gap-5 slider">
+                <figure>
+                    <img src="./images/limelight-gallery-1.png" alt="gallery-img">
+                </figure>
+                <figure>
+                    <img src="./images/limelight-gallery-2.png" alt="gallery-img">
+                </figure>
+                <figure>
+                    <img src="./images/limelight-gallery-3.png" alt="gallery-img">
+                </figure>
+            </div>
+            
+            <!-- Sliding Buttons -->
+            <div class="slidingButtons position-absolute start-50">
+                <a href="#" class="prev"><i class='bx bx-chevron-left text-white'></i></a>
+                <a href="#" class="next"><i class='bx bx-chevron-right text-black'></i></a>
+            </div>
+        </section>
+
+        <!-- Adds -->
+        <section class="adds appear">
+            <div class="container-xxl">
+                <div class="addsText">
+                    <h2>new design <span>ideas</span></h2>
+                    <p class="text-secondary">There are many variations of passagesof Lorem Ipsum available, but theThere are many variations of passages of Lorem Ipsum available, but the</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- News -->
+        <section class="news">
+            <div class="container-xxl">
+                <div class="row gy-5 justify-content-center justify-content-lg-start">
+                    <div class="col-12 col-md-6 col-lg-4 order-2 order-lg-1 appear">
+                        <div class="m-auto m-lg-0 bg-white p-4 rounded-5 shadow post">
+                            <!-- post haed -->
+                            <div class="d-flex justify-content-between">
+                                <figure class="border rounded-circle"><img src="./images/limelight-post-logo.png" alt="logo"></figure>
+                                <span class="fs-3"><i class='bx bx-dots-vertical-rounded'></i></span>
+                            </div>
+                            <!-- post image -->
+                            <figure><img src="./images/limelight-post-1.png" alt="post-2"></figure>
+                            <!-- Icons -->
+                            <div class="d-flex align-items-center justify-content-between icons">
+                                <div class="d-flex gap-2">
+                                    <a href="#" class="text-danger"><i class='bx bxs-heart'></i></a>
+                                    <a href="#"><i class='bx bx-message-rounded'></i></a>
+                                    <a href="#"><i class='bx bx-send' ></i></a>
+                                 </div>
+                                <div class="d-flex gap-1 dots dots1">
+                                    <a href="#" class="text-secondary"><i class='bx bxs-circle'></i></a>
+                                    <a href="#"><i class='bx bxs-circle'></i></a>
+                                    <a href="#" class="text-secondary"><i class='bx bxs-circle'></i></a>
+                                </div>
+                                <div>
+                                    <a href="#"><i class='bx bx-bookmark' ></i></a>
+                                </div>
+                            </div>
+                            <!-- post description -->
+                            <div class="d-flex flex-column">
+                                <span>10.328 views</span>
+                                <p>It is a long established fact that a reader will be distractedby the readable content</p>
+                                <span class="text-secondary">View all 328 comments</span>
+                                <span class="text-secondary">5 DAYS AGO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 order-3 order-lg-2 appear">
+                        <div class="m-auto m-lg-0 bg-white p-4 rounded-5 shadow mt-lg-5 post">
+                            <!-- post haed -->
+                            <div class="d-flex justify-content-between">
+                                <figure class="border rounded-circle"><img src="./images/limelight-post-logo.png" alt="logo"></figure>
+                                <span class="fs-3"><i class='bx bx-dots-vertical-rounded'></i></span>
+                            </div>
+                            <!-- post image -->
+                            <figure><img src="./images/limelight-poster-2.png" alt="post-2"></figure>
+                            <!-- Icons -->
+                            <div class="d-flex align-items-center justify-content-between icons">
+                                <div class="d-flex gap-2">
+                                    <a href="#" class="text-danger"><i class='bx bxs-heart'></i></a>
+                                    <a href="#"><i class='bx bx-message-rounded'></i></a>
+                                    <a href="#"><i class='bx bx-send' ></i></a>
+                                 </div>
+                                 <div class="d-flex gap-1 dots dots2">
+                                    <a href="#" class="text-secondary"><i class='bx bxs-circle'></i></a>
+                                    <a href="#" class="text-secondary"><i class='bx bxs-circle'></i></a>
+                                    <a href="#"><i class='bx bxs-circle'></i></a>
+                                </div>
+                                <div>
+                                    <a href="#"><i class='bx bx-bookmark' ></i></a>
+                                </div>
+                            </div>
+                            <!-- post description -->
+                            <div class="d-flex flex-column">
+                                <span>10.328 views</span>
+                                <p>It is a long established fact that a reader will be distractedby the readable content</p>
+                                <span class="text-secondary">View all 328 comments</span>
+                                <span class="text-secondary">5 DAYS AGO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center order-1 order-lg-3 appear">
+                        <div class="m-auto m-lg-0">
+                            <h2 class="mb-5 text-center text-lg-end">read our <span>latest news</span></h2>
+                            <a href="#" class="primaryBtn m-auto m-lg-0 ms-lg-auto">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section class="testimonials">
+            <div class="container-xxl">
+                <!-- Heading -->
+                <div class="text-center mb-5 appear">
+                    <h2>our <span>testimonials</span></h2>
+                </div>
+                <!-- testimonal reviews -->
+                <div class="row gy-5">
+                    <div class="col-12 col-md-6 col-lg-4 appear">
+                        <div class="rounded-4 p-4 shadow testimonalCard">
+                            <div class="text-center mb-4 rivew">
+                                <i class='bx bxs-quote-single-left'></i>
+                                <i class='bx bxs-quote-single-left'></i>
+                                <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud</p>
+                                <p class="fw-semibold">- Sumit Sanyal</p>
+                            </div>
+                            <div class="text-center">
+                                <img src="./images/limelight-client-1.png" alt="clients">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 appear">
+                        <div class="rounded-4 p-4 shadow testimonalCard">
+                            <div class="text-center mb-4 rivew">
+                                <i class='bx bxs-quote-single-left'></i>
+                                <i class='bx bxs-quote-single-left'></i>
+                                <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud</p>
+                                <p class="fw-semibold">- James Philip</p>
+                            </div>
+                            <div class="text-center">
+                                <img src="./images/limelight-client-2.png" alt="clients">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 appear">
+                        <div class="rounded-4 p-4 shadow testimonalCard">
+                            <div class="text-center mb-4 rivew">
+                                <i class='bx bxs-quote-single-left'></i>
+                                <i class='bx bxs-quote-single-left'></i>
+                                <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud</p>
+                                <p class="fw-semibold">- Arya Stark</p>
+                            </div>
+                            <div class="text-center">
+                                <img src="./images/limelight-client-3.png" alt="clients">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ccontact -->
+        <section class="bg-black contact">
+            <div class="container-xxl">
+                <div class="text-center mb-5 appear">
+                    <h2 class="text-white">contact <span>us</span></h2>
+                </div>
+                    <div class="row gy-5">
+                        <div class="col-12 col-lg-6 ps-lg-5 pe-lg-0 appear">
+                            <form class="d-flex flex-column gap-3">
+                                <input type="text" name="name" id="name" placeholder="Name" class="rounded-3 p-2 p-lg-3">
+                                <input type="email" name="mail" id="mail" placeholder="Email" class="rounded-3 p-2 p-lg-3">
+                                <input type="number" name="number" id="numer" placeholder="Phone Number" class="rounded-3 p-2 p-lg-3">
+                                <textarea name="message" id="message" placeholder="Message" rows="8" class="rounded-3 p-2 p-lg-3"></textarea>
+                                <input type="submit" value="Send" class="submitBtn m-auto m-lg-0">
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-6 pe-lg-5 appear">
+                            <figure class="position-relative text-center">
+                                <img src="./images/limelight-map.png" alt="map" class="img-fluid">
+                                <img src="./images/limelight-map-circle.png" alt="map-circle" class="position-absolute start-50 top-50 translate-middle img-fluid">
+                            </figure>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footTop">
+                 <div class="container-xxl">
+                <div class="d-flex flex-wrap justify-content-center  gap-3">
+                    <div class="text-center text-md-start item">
+                        <div class="d-flex gap-1 mb-3 justify-content-center justify-content-md-start socialIcons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-linkedin'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                        </div>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by </p>
+                    </div>
+                    <div class="text-center text-md-start item">
+                        <p class="text-uppercase fw-semibold fs-3">let us help you</p>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by </p>
+                    </div>
+                    <div class="text-center text-md-start item">
+                        <p class="text-uppercase fw-semibold fs-3">information</p>
+                        <div class="d-flex flex-column footLinks">
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Gallery</a>
+                            <a href="#">Testimonials</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="text-center text-md-start item">
+                        <p class="text-uppercase fw-semibold fs-3">our design</p>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+           
+            <div class="bg-white footBottom">
+                <div class="container-xxl">
+                    <p class="text-center pt-3">© 2022 All Rights Reserved. <a href="#" class="footBrand">Limelight</a></p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    
+
+    <!-- Bootstrap JS + Popper JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My Js File -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

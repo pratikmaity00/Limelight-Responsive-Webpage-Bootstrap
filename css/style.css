@@ -1,0 +1,401 @@
+/* Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primaryColor: #ffc000;
+    --secondaryColor: #f2a808;
+    --yellowOrage: #f8af0a;
+    --darkyellow: #dd9900;
+    --fadeBlack: #1f1f1f;
+    --greyBlack: #252525;
+    --grey: #e8e8e8;
+    --darkGrey: #f2f2f2;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+/* common Elements */
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: clamp(2rem,9vw,7.5rem);
+    color: white;
+    line-height: 1;
+}
+
+h2 {
+    font-size: clamp(2rem,5vw,4.188rem);
+    color: var(--fadeBlack);
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+h2 span {
+    color: var(--yellowOrage);
+}
+
+
+
+/* common classes */
+.customBtn {
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--primaryColor);
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+.customBtn:hover {
+    background-color: #acacacb4;
+    color: white;
+    border-color: white;
+}
+
+.slidingButtons  {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.slidingButtons .prev {
+    background-color: var(--secondaryColor);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.slidingButtons .prev:hover {
+    background-color: black;
+}
+
+.slidingButtons .next {
+    background-color: black;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.slidingButtons .next:hover {
+    background-color: var(--secondaryColor);
+}
+
+.primaryBtn {
+    width: 180px;
+    height: 50px;
+    background-color: var(--greyBlack);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+.primaryBtn:hover {
+    background-color: var(--yellowOrage);
+}
+
+/* Navbar */
+nav {
+    height: 160px;
+}
+
+.navbar-nav {
+    gap: 10px;
+
+}
+
+.active {
+    color: var(--primaryColor)!important;
+}
+.nav-link:hover {
+    color: var(--primaryColor)!important;
+}
+
+/* Mobile / Offcanvas */
+.navbar-nav .nav-link {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .navbar-nav .nav-link {
+    color: #212529;
+  }
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* Banner */
+.banner {
+    background-image: url('../images/limelight-banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--primaryColor);
+    background-blend-mode: multiply;
+    height: 100vh;
+    position: relative;
+    margin-bottom: 195px;
+}
+
+.banner .container-xxl {
+    height: 100%;
+}
+
+.bannerText {
+    max-width: 600px;
+    width: 100%;
+}
+
+.banner .slidingButtons {
+    position: absolute;
+    bottom: -35px;
+}
+
+
+/* Service */
+.service {
+    padding-top: 110px;
+    padding-bottom: 140px;
+}
+
+.serviceHeading {
+    margin-bottom: 85px;
+}
+
+.service .row {
+    margin-bottom: 70px;
+}
+
+
+/* Gallery */
+.gallery .slidingButtons {
+    bottom: -30px;
+    transform: translateX(-50%);
+    
+}
+
+.gallery .next {
+    background-color: var(--grey);
+}
+
+.gallery .prev:hover {
+    background-color: var(--grey);
+}
+
+/* Adds */
+.adds {
+    margin-block: 200px;
+    background-image: url('../images/limelight-newdesign.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.addsText {
+    background-color: white;
+    max-width: 630px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* news */
+.news {
+    padding-bottom: 150px;
+}
+.icons a {
+    color: black;
+    font-size: 25px;
+}
+
+.dots a {
+    font-size: 8px;
+}
+
+.dots1 a:nth-child(2) {
+    color: #0076c0;
+}
+
+.dots2 a:nth-child(3) {
+    color: #0076c0;
+}
+
+.post {
+    max-width: 440px;
+    width: 100%;
+}
+
+/* Testimonials */
+.testimonalCard {
+    background-color: var(--darkGrey);
+}
+
+.testimonalCard i {
+    font-size: 40px;
+    color: var(--yellowOrage);
+}
+
+.testimonials {
+    padding-bottom: 150px;
+}
+
+
+/* Contact */
+.contact {
+    padding-block: 90px;
+}
+
+.submitBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    background-color: var(--darkyellow);
+    border-radius: 12px;
+    border: none;
+    font-weight: 500;
+    transition: all .2s linear;
+}
+.submitBtn:hover {
+    background-color: var(--primaryColor);
+}
+
+input,textarea {
+    outline: none;
+    border: 2px solid transparent;
+    background-color: var(--darkGrey);
+}
+
+input:focus,textarea:focus {
+    border-color: var(--darkyellow);
+}
+
+
+/* Footer */
+.footTop {
+    background-color: var(--darkyellow);
+    padding-top: 95px;
+    padding-bottom: 150px;
+}
+
+footer .item {
+    flex: 1 1 200px;
+}
+
+.socialIcons a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all .2s ease-in;
+}
+
+.socialIcons a:hover {
+    background-color: var(--darkGrey);
+    color: black;
+}
+
+.footLinks a {
+    color: black;
+    transition: all .3s linear;
+}
+
+.footLinks a:hover {
+    color: white;
+}
+
+.footBrand {
+    color: black;
+    transition: all .2s linear;
+}
+
+.footBrand:hover {
+    color: var(--darkyellow);
+}
+
+
+.appear {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: appear linear forwards;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* Bootstrap Conatiner Deafult */
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-xl,
+  .container-xxl {
+    max-width: 1460px;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 575px) {
+    p {
+        font-size: 14px;
+    }
+  .navbar-brand img {
+    width: 200px;
+  }
+}
+@media (max-width: 300px) {
+    .navbar-brand img {
+        width: 120px;
+    }
+}
